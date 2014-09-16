@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Urna()
+comment1.params=
+comment1.target=int\ contarCandidatoA()
+comment2.params=
+comment2.target=int\ contarCandidatoB()
+comment3.params=
+comment3.target=int\ contarCandidatoC()
+comment4.params=
+comment4.target=int\ contarNulos()
+comment5.params=
+comment5.target=int\ contarBrancos()
+comment6.params=
+comment6.target=int\ contarVotos()
+comment7.params=candidato
+comment7.target=void\ votar(char)
+numComments=8
