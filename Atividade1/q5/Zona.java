@@ -72,20 +72,23 @@ public class Zona
     }
 
     public String verificarVencedor() {
-        if ( (this.contarVotosCA() == this.contarVotosCC() && this.contarVotosCA() > this.contarVotosCB()) || 
-             (this.contarVotosCA() == this.contarVotosCB() && this.contarVotosCA() > this.contarVotosCC()) || 
-             (this.contarVotosCA() > this.contarVotosCB() && this.contarVotosCA() > this.contarVotosCC()) ) {
-            return "Vencedor da eleição: Candidato A;";
-        } else if ( (this.contarVotosCB() == this.contarVotosCC() && this.contarVotosCB() > this.contarVotosCA()) || 
-                    (this.contarVotosCB() == this.contarVotosCA() && this.contarVotosCB() > this.contarVotosCC()) || 
-                    (this.contarVotosCB() > this.contarVotosCA() && this.contarVotosCB() > this.contarVotosCC()) ) {
-            return "Vencedor da eleição: Candidato B;";
-        } else if ( (this.contarVotosCC() == this.contarVotosCB() && this.contarVotosCC() > this.contarVotosCA()) || 
-                    (this.contarVotosCC() == this.contarVotosCA() && this.contarVotosCC() > this.contarVotosCB()) || 
-                    (this.contarVotosCC() > this.contarVotosCA() && this.contarVotosCC() > this.contarVotosCB()) ) {
-            return "Vencedor da eleição: Candidato C;";
-        } else {
+        char vencedor;
+        if ( this.contarVotosCA() == this.contarVotosCB() && this.contarVotosCA() == this.contarVotosCC() )
             return "Empate";
+        if ( this.contarVotosCA() == this.contarVotosCB() && this.contarVotosCA() > this.contarVotosCC() )
+            return "Empate";
+        if ( this.contarVotosCA() == this.contarVotosCC() && this.contarVotosCA() > this.contarVotosCB() )
+            return "Empate";
+        if ( this.contarVotosCB() == this.contarVotosCC() && this.contarVotosCB() > this.contarVotosCA() )
+            return "Empate";
+        
+        vencedor = (this.contarVotosCA() > this.contarVotosCB()) ? 'A' : 'B';
+        if (vencedor == 'A') {
+            vencedor = (this.contarVotosCA() > this.contarVotosCC()) ? 'A' : 'C';
+        } else {
+            vencedor = (this.contarVotosCB() > this.contarVotosCC()) ? 'B' : 'C';
         }
+        
+        return "Vencedor da eleição: Candidato "+vencedor;
     }
 }

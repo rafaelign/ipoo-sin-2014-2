@@ -30,15 +30,12 @@ public class AjudanteMatematico
     
     public String verificarMaiorNumero(int x, int y, int z)
     {
-        if ( (x == z && x > y) || (x == y && x > z) || (x > y && x > z) ) {
-            return x+" é maior";
-        } else if ( (y == z && y > x) || (y == x && y > z) || (y > x && y > z) ) {
-            return y+" é maior";
-        } else if ( (z == y && z > x) || (z == x && z > y) || (z > x && z > y) ) {
-            return z+" é maior";
-        } else {
-            return "Os números são iguais";
-        }
+        if (x == y && x == z)
+            return "Números iguais";
+        
+        int maior;
+        maior = (x > y) ? x : y;
+        return (maior > z) ? maior+" é o maior número." : z+" é o maior número.";
     }
     
     public double calcularArea(double raio)
