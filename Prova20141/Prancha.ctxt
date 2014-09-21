@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.params=tipoBloco\ modelo\ qtQuilhas\ comprimento\ espessura
+comment0.target=Prancha(char,\ java.lang.String,\ int,\ float,\ float)
+comment0.text=\n\ esta\ classe\ possui\ dois\ construtores,\ \n\ o\ primeiro\ possui\ 4\ par\u00E2metros\ utilizados\ para\ inicializar\ \n\ todos\ os\ atributos\ da\ classe\ Prancha.\n\ O\ segundo\ n\u00E3o\ tem\ par\u00E2metro\ a\!lgum\ e\ atribui\ valores\ padr\u00E3o\ \n\ (definidos\ por\ voc\u00EA)\ para\ todos\ os\ atributos.\n
+comment1.params=
+comment1.target=Prancha()
+comment10.params=
+comment10.target=float\ buscarComprimento()
+comment11.params=
+comment11.target=float\ buscarEspessura()
+comment2.params=tipoBloco
+comment2.target=void\ definirTipoBloco(char)
+comment3.params=modelo
+comment3.target=void\ definirModelo(java.lang.String)
+comment4.params=qtQuilhas
+comment4.target=void\ definirQtQuilhas(int)
+comment5.params=comprimento
+comment5.target=void\ definirComprimento(float)
+comment6.params=espessura
+comment6.target=void\ definirEspessura(float)
+comment7.params=
+comment7.target=char\ buscarTipoBloco()
+comment8.params=
+comment8.target=java.lang.String\ buscarModelo()
+comment9.params=
+comment9.target=int\ buscarQtQuilhas()
+numComments=12

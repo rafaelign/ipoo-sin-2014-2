@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Fabrica()
+comment1.params=
+comment1.target=void\ ocuparFuncionario()
+comment2.params=
+comment2.target=void\ desocuparFuncionario()
+comment3.params=
+comment3.target=int\ buscarFuncionariosOcupados()
+comment4.params=prancha\ quantidade\ cliente
+comment4.target=boolean\ recebePedido(Prancha,\ int,\ java.lang.String)
+comment4.text=\n\ recebePedido\ \n\ Este\ m\u00E9todo\ recebe\ como\ entrada\ uma\ prancha,\ \n\ a\ quantidade\ desejada\ desta\ prancha\ \n\ e\ uma\ descri\u00E7\u00E3o\ textual\ do\ contato\ do\ cliente\ que\ fez\ a\ encomenda.\ \n\ \n\ A\ f\u00E1brica\ possui\ apenas\ dois\ funcion\u00E1rios,\ portanto,\ \n\ o\ pedido\ s\u00F3\ \u00E9\ aceito\ caso\ um\ dos\ dois\ funcion\u00E1rios\ esteja\ livre.\ \n\ Caso\ seja\ aceito\ o\ m\u00E9todo\ retorna\ verdadeiro\ e\ falso\ caso\ contr\u00E1rio.\n
+comment5.params=prancha
+comment5.target=float\ calcularCustoPrancha(Prancha)
+comment5.text=\n\ Este\ m\u00E9todo\ recebe\ como\ entrada\ uma\ prancha\ \n\ e\ retorna\ o\ valor\ em\ R$\ do\ custo\ para\ produ\u00E7\u00E3o\ da\ prancha\ de\ acordo\ com\ as\ regras\ a\ seguir\:\ \n\ Caso\ o\ tipo\ do\ bloco\ da\ prancha\ seja\ fibra\ (identificado\ por\ f)\ ou\ epoxi\ (identificado\ por\ e)\ o\ custo\ \u00E9\ de\ R$\ 200,00.\ \n\ Qualquer\ outro\ material\ possui\ custo\ de\ R$\ 350,00.\n\ \n\ Cada\ quilha\ da\ prancha\ custa\ R$\ 25,00.\ \n\ \n\ Pranchas\ com\ at\u00E9\ 150cm\ de\ comprimento\ acrescentam\ R\ $\ 50,00\ ao\ custo,\ \n\ entre\ 150cm\ e\ 180cm\ acrescentam\ R$\ 75,00\ \n\ e\ acima\ de\ 180cm\ acrescentam\ R$\ 100.\n\ \n\ O\ custo\ base\ da\ prancha\ \u00E9\ a\ soma\ do\ custo\ do\ bloco\ mais\ o\ valor\ das\ quilhas\ mais\ o\ adicional\ do\ comprimento.\ \n\ O\ custo\ total\ da\ prancha\ \u00E9\ o\ custo\ base\ mais\ 30%\ do\ valor\ do\ custo\ base.\n
+comment6.params=valor
+comment6.target=float\ arredondar(float)
+comment6.text=\n\ Este\ m\u00E9todo\ recebe\ como\ entrada\ um\ valor\ em\ R$\ e\ retorna\ o\ seu\ valor\ arredondado.\ \n\ O\ arredondamento\ \u00E9\ feito\ de\ forma\ a\ sempre\ retornar\ um\ valor\ inteiro,\ ou\ seja,\ sem\ centavos.\ \n\ Caso\ o\ valor\ dos\ centavos\ seja\ igual\ ou\ superior\ a\ 0,5\ \u00E9\ retornado\ o\ arredondamento\ para\ cima.\ \n\ Caso\ seja\ inferior\ a\ 0,5\ retorna-se\ o\ arredondamento\ para\ baixo.\ Exemplo\:\ R$\ 723,54\ \u2014>\ 724;\ R$\ 55,32\ \u2014>\ 55\n
+comment7.params=prancha\ quantidade
+comment7.target=float\ entregarPrancha(Prancha,\ int)
+comment7.text=\n\ Este\ m\u00E9todo\ recebe\ como\ entrada\ uma\ prancha\ e\ a\ quantidade\ destas\ pranchas,\ \n\ retorna\ o\ pre\u00E7o\ do\ pedido\ e\ libera\ um\ funcion\u00E1rio\ \n\ (tendo\ em\ vista\ que,\ como\ a\ prancha\ est\u00E1\ pronta,\ agora\ este\ funcion\u00E1rio\ pode\ trabalhar\ em\ um\ novo\ pedido).\ \n\ \n\ O\ pre\u00E7o\ de\ cada\ prancha\ \u00E9\ o\ custo\ total\ da\ prancha\ (m\u00E9todo\ calcularCustoPrancha)\ \n\ mais\ R$\ 50,00\ da\ embalagem\ e\ mais\ 15%\ do\ custo\ total.\ \n\ \n\ Caso\ a\ quantidade\ de\ pranchas\ seja\ superior\ a\ 5\ por\u00E9m\ inferior\ a\ 10,\ o\ pre\u00E7o\ recebe\ um\ desconto\ de\ 10%.\ \n\ Caso\ seja\ superior\ a\ 10\ por\u00E9m\ inferior\ a\ 15,\ h\u00E1\ um\ desconto\ de\ 15%\ e\ caso\ a\ quantidade\ seja\ superior\ a\ 15\ fornece-se\ um\ desconto\ de\ 20%.\ \n\ \n\ O\ Tiozinho\ habituado\ a\ lidar\ com\ grandes\ quantias\ n\u00E3o\ trabalha\ com\ moedas,\ portanto,\ \n\ o\ pre\u00E7o\ final\ \u00E9\ sempre\ arredondado\ atrav\u00E9s\ do\ m\u00E9todo\ arredondar\n
+numComments=8
