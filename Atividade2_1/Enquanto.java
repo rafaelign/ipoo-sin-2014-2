@@ -170,14 +170,77 @@ public class Enquanto
         System.out.println("Total Grãos: "+total);
     }
     
+    /**
+     * Implemente uma classe em Java para contar o número de dias decorridos
+     * entre duas datas. As datas devem ser informadas através de 4 parâmetos (d1, m1, d2, m2), 
+     * representando o 1o dia e seu mês e o 2o dia e seu mês, respectivamente. 
+     * O programa deve verificar se as datas são válidas (mês e número de dias do mês), 
+     * e se a segunda data é realmente posterior a primeira (caso contrário informar que 
+     * houve um erro ao fornecer as datas).
+     * OBS.: O número de dias de cada mês a ser considerado no cálculo é o seguinte:
+     * i. 1 e 28 – fevereiro
+     * ii. 1 e 31 - janeiro, março, maio, julho, agosto, outubro e dezembro
+     * iii. 1 e 30 – abril, junho, setembro e novembro
+     * Obs2.: apesar deste problema poder ser resolvido sem estruturas de repetição, 
+     * neste caso, utilize-as.
+     */
     public void contarDias(int d1, int m1, int d2, int m2)
     {
-        if (d1 < d2 && m1 == m2) {
-            System.out.println("Total de dias percorridos: "+(d2 - d1));
-        } else if () {
-            
+        int total = 0;
+        int diasMes = 31;
+        d1 = d1 - 1;
+        
+        if (m1 <= 12 && m2 <= 12 && (m1 < m2 || (m1 == m2 && d1 < d2))) {
+            if (d1 < d2 && m1 == m2) {
+                // Mesmo mês...
+                if (d2 > 30 && (m1 == 4 || m1 == 6 || m1 == 9 || m1 == 11)) {
+                    d2 = 30;
+                } else if (d2 > 28 && m1 == 2) {
+                    d2 = 28;
+                } else if (d2 > 31) {
+                    d2 = 31;
+                }
+                System.out.println("Total de dias percorridos: "+(d2 - d1));
+            } else {
+                // Primeiro mês
+                if (d1 >= 0) {
+                    if (m1 == 4 || m1 == 6 || m1 == 9 || m1 == 11) {
+                        total = 30 - d1;
+                    } else if (m1 == 2) {
+                        total = 28 - d1;
+                    } else {
+                        total = 31 - d1;
+                    }
+                    
+                    m1 = m1 + 1;
+                }
+
+                // Meses sequentes
+                while (m1 <= m2) {
+                    if (m1 == m2) {
+                        diasMes = d2;
+                    } else {
+                        diasMes = 31;
+                    }
+
+                    // Ajuste do dia limite
+                    if (diasMes > 31) {
+                        diasMes = 31;
+                    }
+                    if (diasMes > 30 && (m1 == 4 || m1 == 6 || m1 == 9 || m1 == 11)) {
+                        diasMes = 30;
+                    } else if (diasMes > 28 && m1 == 2) {
+                        diasMes = 28;
+                    }
+
+                    total = total + diasMes;
+                    m1 = m1 + 1;
+                }
+                
+                System.out.println("Total de dias percorridos: "+total);
+            }
         } else {
-            System.out.println("Período inválida");
+            System.out.println("Dados informados incorretamente.");
         }
     }
 }

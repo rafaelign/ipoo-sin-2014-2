@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Primos()
+comment0.text=\n\ Construtor\ para\ objetos\ da\ classe\ Primos\n
+comment1.params=n
+comment1.target=int\ contarDivisores(int)
+comment1.text=\n\ contarDivisores\n
+comment2.params=n
+comment2.target=int\ proximoPrimo(int)
+comment2.text=\n\ proximoPrimo\n
+comment3.params=ini\ fim
+comment3.target=long\ somaPrimos(int,\ int)
+comment3.text=\n\ somaPrimos\n
+numComments=4
