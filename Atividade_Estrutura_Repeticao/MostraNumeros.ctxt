@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=
+comment0.target=MostraNumeros()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ MostraNumeros\r\n
+comment1.params=
+comment1.target=void\ maioresADireita()
+comment2.params=
+comment2.target=void\ menoresADireita()
+comment3.params=n
+comment3.target=void\ numerosADireita(int)
+comment4.params=n
+comment4.target=int\ numeroDigitos(int)
+numComments=5
