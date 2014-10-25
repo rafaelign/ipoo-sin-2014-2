@@ -1,5 +1,7 @@
 package Atividade2_2;
 
+import java.util.Random;
+
 /**
  * Escreva a descrição da classe Primos aqui.
  * 
@@ -8,13 +10,15 @@ package Atividade2_2;
  */
 public class Primos
 {
-    private primos = false;
+    private boolean primos;
     
     /**
      * Construtor para objetos da classe Primos
      */
     public Primos()
-    {}
+    {
+        this.setPrimos(false);
+    }
     
     public void setPrimos(boolean p)
     {
@@ -29,8 +33,9 @@ public class Primos
     /**
      * contarDivisores
      */
-    public int contarDivisores(int n)
+    public int contarDivisores(int n, boolean primos)
     {
+        this.setPrimos(primos);
         int count = 2;
         int down = 0;
         int up = 2;
@@ -85,7 +90,7 @@ public class Primos
     {
         int prox = n + 1;
         
-        while (this.contarDivisores(prox) != 2) {
+        while (this.contarDivisores(prox, true) != 2) {
             prox = prox + 1;
         }
         
@@ -98,7 +103,7 @@ public class Primos
     public long somaPrimos(int ini, int fim)
     {
         long total = 0;
-        if (this.contarDivisores(ini) != 2) {
+        if (this.contarDivisores(ini, true) != 2) {
             ini = this.proximoPrimo(ini);
         }
 
@@ -115,7 +120,7 @@ public class Primos
     */
    public void primosAleatorios()
    {
-       Random random;
+       Random random = new Random();
        int n;
        
        this.setPrimos(true);
