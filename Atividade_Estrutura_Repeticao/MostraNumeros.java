@@ -50,15 +50,18 @@ public class MostraNumeros
     public void numerosADireita(int n)
     {
         int sub = 0;
-        int spaces = this.numeroDigitos(n);
+        int spaces = this.numeroDigitos(n) + 1;
         for (int i = 1;i <= n;i = i + 1) {
             for (int j = 1;j <= n;j = j + 1) {
-                if ((j - sub) <= 0) {
-                    for(int k = 0;k <= spaces;k = k + 1){
+                for(int k = 0;k < (spaces - this.numeroDigitos(j - sub));k = k + 1){
+                    if (j > 1) {
                         System.out.print(" ");
                     }
+                }
+                if ( (j - sub) <= 0 ) {
+                    System.out.print(" ");
                 } else {
-                    System.out.print((j - sub));
+                    System.out.print(j - sub);
                 }
             }
             System.out.println("");
