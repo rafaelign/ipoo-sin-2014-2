@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Strings()
+comment1.params=c1\ c2
+comment1.target=boolean\ compararChar(char[],\ char[])
+comment1.text=\n\ Recebe\ duas\ strings\ (vetor\ de\ caracteres)\ por\ par\u00E2metro\ e\ retorna\ verdadeiro\ caso\ elas\ sejam\ \n\ iguais\ ou\ falso\ caso\ contr\u00E1rio.\n
+comment2.params=t1\ t2
+comment2.target=boolean\ compararStrings(java.lang.String,\ java.lang.String)
+comment2.text=\n\ Recebe\ duas\ strings\ (tipo\ String)\ por\ par\u00E2metro\ e\ retorna\ verdadeiro\ caso\ elas\ sejam\ iguais\ \n\ ou\ falso\ caso\ contr\u00E1rio.\n
+comment3.params=c1\ c2
+comment3.target=char[]\ maiorChar(char[],\ char[])
+comment3.text=\n\ Recebe\ duas\ strings\ (vetor\ de\ caracteres)\ por\ par\u00E2metro\ e\ retorna\ a\ maior\ das\ duas\ strings.\n
+comment4.params=texto
+comment4.target=void\ contarCaracteres(char[])
+comment4.text=\n\ Recebe\ uma\ string\ (vetor\ de\ caracteres)\ por\ par\u00E2metro\ e\ informa\ (em\ modo\ texto),\ a\ quantidade\ \n\ de\ vogais,\ de\ consoantes\ e\ de\ n\u00FAmeros\ presentes\ na\ string.\n
+comment5.params=texto
+comment5.target=boolean\ palindromo(java.lang.String)
+comment5.text=\n\ Um\ pal\u00EDndromo\ \u00E9\ uma\ frase\ ou\ palavra\ que\ mant\u00E9m\ o\ mesmo\ sentido\ quando\ lida\ de\ tr\u00E1s\ pra\ frente.\ \n\ Exemplos\:\ reger,\ rir,\ radar,\ ele,\ esse,\ ama,\ aia,\ etc.\ Construa\ um\ m\u00E9todo\ que\ recebe\ uma\ string\ \n\ por\ par\u00E2metro\ e\ retorna\ verdadeiro\ caso\ a\ palavra\ seja\ um\ pal\u00EDndromo\ ou\ falso\ caso\ contrario.\n
+numComments=6

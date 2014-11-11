@@ -1,13 +1,11 @@
-package Atividade3_1;
+package Atividades3;
 
-
+/**
+ * Arquivo: Lista de Exercícios 3.0: Vetores
+ */
 public class Vetores
 {
-    /**
-     * Constructor for objects of class Vetores
-     */
-    public Vetores()
-    {}
+    public Vetores() {}
 
     /**
      * Recebe um vetor com 20 valores e, após a leitura, informa quais deles são 
@@ -100,4 +98,48 @@ public class Vetores
             }
         }
     }
+    
+    /**
+     * Recebe por parâmetro um vetor com 20 valores inteiros (positivos e negativos) e retorna um novo 
+     * vetor somente com os valores negativos.
+     */
+    
+    /**
+     * Dado um gabarito de uma prova com 10 questões cujas respostas podem ser A, B, C, D ou E, 
+     * elabore um método que receba uma prova por parâmetro retorna a quantidade de acertos. 
+     * Gabarito: {A,A,C,E,D,B,C,E,B,D}.
+     */
+    
+    /**
+     * Recebe um vetor com 15 valores inteiros e: 1. divide todos os elementos deste vetor pelo 
+     * maior valor e 2. Divide todos os elementos pelo menor valor. Apresente os vetores resultantes.
+     */
+    
+    /**
+     * Gere os 30 primeiros números primos a partir de 100 e armazene-os em um vetor. No final, 
+     * imprima o vetor com os números primos.
+     */
+    
+    /**
+     * Dados dois vetores, cada um com 5 valores inteiros, realize a multiplicação dos elementos 
+     * com o mesmo índice e, ao final, exiba o vetor resultante para o usuário.
+     */
+    
+    /**
+     * Dado um vetor com 20 elementos (parâmetro), primeiro imprima-o (com os valores lado-a-lado) e, 
+     * em seguida, troque o primeiro elemento com o último, o segundo com o penúltimo, o terceiro com 
+     * o antepenúltimo, e assim sucessivamente. Mostre o novo vetor depois da troca.
+     */
+    
+    /**
+     * Dado um vetor de 15 números inteiros, apresentar quantas vezes cada número informado aparece.
+     */
+    
+    /**
+     * Calcule o número de dias decorridos entre duas datas. As datas devem ser lidas no formato 
+     * dia-mês (considerando que ambas estão no ano corrente). O programa deve verificar se as datas 
+     * são válidas (mês e número de dias do mês), e se a segunda data é realmente posterior a primeira 
+     * (caso contrário informar que houve um erro ao fornecer as datas). Considere a quantidade correta
+     * de dias para cada mês. Utilize um vetor para representar os dias de cada mês.
+     */
 }
