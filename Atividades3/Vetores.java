@@ -8,6 +8,20 @@ public class Vetores
     public Vetores() {}
 
     /**
+     * Método auxiliar.
+     * Mostrar Matrizes.
+     */
+    public void mostrarVetor(int[] numeros, String separador)
+    {
+        for (int indice = 0;indice < numeros.length;indice = indice + 1) {
+            System.out.print(numeros[indice]);
+            if (indice < (numeros.length - 1)) {
+                System.out.print(separador);
+            }
+        }
+    }
+    
+    /**
      * Recebe um vetor com 20 valores e, após a leitura, informa quais deles são 
      * pares e quais deles são ímpares
      */
@@ -103,17 +117,73 @@ public class Vetores
      * Recebe por parâmetro um vetor com 20 valores inteiros (positivos e negativos) e retorna um novo 
      * vetor somente com os valores negativos.
      */
+    public int[] transformarEmNegativos(int[] numeros)
+    {
+        for (int i = 0;i < numeros.length;i = i + 1) {
+            if (numeros[i] > 0) {
+                numeros[i] = numeros[i] * -1;
+            }
+        }
+        
+        return numeros;
+    }
     
     /**
      * Dado um gabarito de uma prova com 10 questões cujas respostas podem ser A, B, C, D ou E, 
      * elabore um método que receba uma prova por parâmetro retorna a quantidade de acertos. 
      * Gabarito: {A,A,C,E,D,B,C,E,B,D}.
      */
+    public int corrigirProva(char[] respostas)
+    {
+        char[] gabarito = {'A','A','C','E','D','B','C','E','B','D'};
+        int acertos = 0;
+        
+        for (int questao = 0;questao < gabarito.length;questao = questao + 1) {
+            if (respostas[questao] == gabarito[questao]) {
+                acertos = acertos + 1;
+            }
+        }
+        
+        return acertos;
+    }
     
     /**
      * Recebe um vetor com 15 valores inteiros e: 1. divide todos os elementos deste vetor pelo 
      * maior valor e 2. Divide todos os elementos pelo menor valor. Apresente os vetores resultantes.
      */
+    public void processarVetor(float[] numeros)
+    {
+        float maiorValor;
+        float menorValor;
+        
+        for (int i = 0;i < numeros.length;i = i + 1) {
+            if (i == 0) {
+                maiorValor = numeros[i];
+                menorValor = numeros[i];
+                continue;
+            }
+            
+            if (numeros[i] > maiorValor) {
+                maiorValor = numeros[i];
+            }
+            
+            if (numeros[i] < menorValor) {
+                menorValor = numeros[i];
+            }
+        }
+        
+        float vetorA = new float[numeros.length];
+        float vetorB = new float[numeros.length];
+        for (int i = 0;i < numeros.length;i = i + 1) {
+            vetorA[i] = numeros[i] / maiorValor;
+            vetorB[i] = numeros[i] / menorValor;
+        }
+        
+        this.mostrarVetor(vetorA, " | ");
+        System.out.println();
+        System.out.println();
+        this.mostrarVetor(vetorB, " | ");
+    }
     
     /**
      * Gere os 30 primeiros números primos a partir de 100 e armazene-os em um vetor. No final, 

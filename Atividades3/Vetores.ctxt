@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Vetores()
+comment1.params=numeros
+comment1.target=void\ identificarNumeros(int[])
+comment1.text=\r\n\ Recebe\ um\ vetor\ com\ 20\ valores\ e,\ ap\u00F3s\ a\ leitura,\ informa\ quais\ deles\ s\u00E3o\ \r\n\ pares\ e\ quais\ deles\ s\u00E3o\ \u00EDmpares\r\n
+comment2.params=caracteres
+comment2.target=void\ mostrarInvertido(char[])
+comment2.text=\r\n\ Recebe\ um\ vetor\ com\ 10\ caracteres\ e\ mostra-os\ para\ o\ usu\u00E1rio\ em\ ordem\ inversa\r\n
+comment3.params=numero
+comment3.target=int\ fatorial(int)
+comment3.text=\r\n\ Recebe\ um\ vetor\ com\ 10\ valores\ inteiros\ e\ apresenta\ o\ fatorial\ de\ cada\ um\ deles\r\n
+comment4.params=numeros
+comment4.target=void\ calcularFatoriais(int[])
+comment5.params=numeros
+comment5.target=void\ mostrarMaiorMenor(int[])
+comment5.text=\r\n\ Recebe\ por\ par\u00E2metro\ um\ vetor\ com\ 10\ valores\ inteiros\ e\ informa\ (para\ o\ usu\u00E1rio,em\ modo\ texto)\r\n\ qual\t\u00E9\ o\ maior\ e\ o\ menor\ valor\ lido,\ bem\ como\ suas\ posi\u00E7\u00F5es\ no\ vetor\r\n
+comment6.params=numeros
+comment6.target=void\ mostrarMaiorMenor2(int[])
+comment6.text=\r\n\ Repita\ o\ mesmo\ exerc\u00EDcio\ da\ letra\ d,\ por\u00E9m\ informe\ agora\ os\ dois\ maiores\ e\ os\ dois\ menores\ valores,\r\n\ bem\ como\ suas\ posi\u00E7\u00F5es\r\n
+comment7.params=numeros
+comment7.target=int[]\ transformarEmNegativos(int[])
+comment7.text=\r\n\ Recebe\ por\ par\u00E2metro\ um\ vetor\ com\ 20\ valores\ inteiros\ (positivos\ e\ negativos)\ e\ retorna\ um\ novo\ \r\n\ vetor\ somente\ com\ os\ valores\ negativos.\r\n
+comment8.params=respostas
+comment8.target=int\ corrigirProva(char[])
+comment8.text=\r\n\ Dado\ um\ gabarito\ de\ uma\ prova\ com\ 10\ quest\u00F5es\ cujas\ respostas\ podem\ ser\ A,\ B,\ C,\ D\ ou\ E,\ \r\n\ elabore\ um\ m\u00E9todo\ que\ receba\ uma\ prova\ por\ par\u00E2metro\ retorna\ a\ quantidade\ de\ acertos.\ \r\n\ Gabarito\:\ {A,A,C,E,D,B,C,E,B,D}.\r\n
+numComments=9
