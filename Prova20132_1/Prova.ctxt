@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Prova()
+comment1.params=numeros
+comment1.target=int[]\ somaDiagonais(int[][])
+comment1.text=\n\ Elabore\ um\ m\u00E9todo\ (assinatura\ e\ implementa\u00E7\u00E3o)\ que\ recebe\ uma\ matriz\ NxN\ (ou\ \n\ seja,\ uma\ matriz\ quadrada,\ na\ qual\ a\ quantidade\ de\ linhas\ \u00E9\ a\ mesma\ que\ a\ de\ \n\ colunas)\ por\ par\u00E2metro\ e\ retorna\ um\ vetor\ onde\ cada\ elemento\ representa\ o\ somat\u00F3rio\ \n\ de\ uma\ diagonal\ acima\ da\ secund\u00E1ria.\ N\u00E3o\ \u00E9\ necess\u00E1rio\ verificar\ se\ a\ matriz\ \u00E9\ \n\ quadrada.\ (4,0)\n\ Exemplo\:\n\ \ \ \ \ d0\ d1\ d2\n\ 1\ \ 2\ \ 3\ 10\ d0\ \=\ 1\ \=\ 1\n\ 1\ \ 2\ \ 10\ 0\ d1\ \=\ 2\ +\ 1\ \=\ 3\n\ 1\ \ 10\ 0\ 0\ d2\ \=\ 3\ +\ 2\ +\ 1\ \=\ 6\n\ 10\ 0\ 0\ 0\ retorno\:\ {1,\ 3,\ 6}\ -\ vetor\ com\ 3\ posi\u00E7\u00F5es\n\ \n\ {{1,2,3,10},{1,2,10,0},{1,10,0,0},{10,0,0,0}}\n
+numComments=2

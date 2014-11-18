@@ -17,7 +17,32 @@ public class Prova
      * 1  2  10 0 d1 = 2 + 1 = 3
      * 1  10 0 0 d2 = 3 + 2 + 1 = 6
      * 10 0 0 0 retorno: {1, 3, 6} - vetor com 3 posições
+     * 
+     * {{1,2,3,10},{1,2,10,0},{1,10,0,0},{10,0,0,0}}
      */
+    public int[] somaDiagonais(int[][] numeros)
+    {
+        int[] diagonais = new int[numeros.length - 1];
+        int d;
+        int c;
+        
+        // d0 == 0,0
+        // d1 == 1,0 + 0,1
+        // d2 == 2,0 + 1,1 + 0,2
+        
+        for (int dP = 0;dP < diagonais.length;dP = dP + 1) {
+            d = dP;
+            c = 0;
+            while ( (d + c) <= dP && d >= 0) {
+                diagonais[dP] = diagonais[dP] + numeros[d][c];
+                
+                d = d - 1;
+                c = c + 1;
+            }
+        }
+
+        return diagonais;
+    }
     
     /**
      * Elabore o seguinte método public ContaCorrente[][] contasNegEPos 

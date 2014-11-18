@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Prova()
+comment1.params=contas
+comment1.target=void\ maioresSaldos(ContaCorrente[])
+comment1.text=\n\ Elabore\ o\ seguinte\ m\u00E9todo\ public\ void\ maioresSaldos\ (ContaCorrente\ []\ contas),\ o\ \n\ qual\ recebe\ um\ vetor\ de\ contas\ correntes\ e\ informa,\ para\ o\ usu\u00E1rio,\ em\ modo\ texto,\ os\ \n\ nomes\ e\ os\ n\u00FAmeros\ das\ contas\ das\ pessoas\ com\ os\ tr\u00EAs\ maiores\ saldos\ (apresente\ \n\ 1o\ o\ maior\ saldo,\ depois\ o\ 2o\ maior\ e\ por\ \u00FAltimo\ o\ 3o).\ A\ classe\ ContaCorrente\ possui\ \n\ os\ seguintes\ m\u00E9todos\:\ public\ String\ informaNome()\ -\ retorna\ o\ nome\ do\ dono\ da\ conta;\ \n\ public\ double\ informaSaldo\ ()\ -\ retorna\ o\ saldo\ da\ conta;\ public\ String\ informaNConta()\ -\ \n\ retorna\ o\ n\u00FAmero\ da\ conta.\n
+numComments=2
